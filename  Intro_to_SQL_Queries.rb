@@ -1,0 +1,13 @@
+ 1) select * from robots Where source ='Star Wars';
+ 2) select * from robots Where personality ='anxious';
+ 3) SELECT * FROM recipes WHERE nut_free=true;
+ 4) SELECT COUNT(id) FROM recipes WHERE gluten_free = true & vegetarian = false;
+ 5) SELECT * FROM animals ORDER BY number_of_legs Desc limit 1;
+    SELECT * FROM animals where number_of_legs = (select max(number_of_legs) FROM animals);
+ 6) SELECT name FROM board_games WHERE mins_to_play = (select min(mins_to_play) FROM board_games);
+ 7) SELECT * FROM recipes ORDER BY mins_required DESC limit 1;
+ 8) SELECT * FROM robots WHERE name LIKE 'M%';
+ 9) SELECT COUNT(id) FROM board_games WHERE max_players = 8;
+ 10) SELECT * FROM animals WHERE swimming = true AND egg_laying = true;
+ 11) SELECT * FROM animals WHERE swimming = true AND egg_laying = true AND flying = false;
+ 12) SELECT * FROm board_games WHERE max_players = (select max(max_players) FROM board_games);
